@@ -1,7 +1,8 @@
 package org.example.controller;
 
 public class ArrayDataException extends Exception{
-    public ArrayDataException(String messege){
-        super(messege);
+
+        public ArrayDataException(int row, int column) {
+            super("Невірні дані у комірці [" + row + "][" + column + "]");
     }
 }

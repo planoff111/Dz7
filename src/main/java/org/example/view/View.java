@@ -25,16 +25,8 @@ public class View {
 
         System.out.println("Your array");
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                System.out.print(arr[i][j]+ " " + "|" + " ");
-            }
-        }
         return arr;
 
     }
 
-    public void viewResult(int result){
-        System.out.println(result);
-    }
 }

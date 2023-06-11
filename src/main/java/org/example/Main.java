@@ -10,14 +10,10 @@ public class Main {
 
     public static void main(String[] args)  {
         View view = new View();
-        String[][] array = {
-                {"3", "2", "3", "4"},
-                {"5", "1", "7", "8"},
-                {"9", "10", "11", "12"},
-                {"13", "14", "15", "16"}
-        };
+
+
        try{
-           int result = ArrayValueCalculator.doCalc(array);
+           int result = ArrayValueCalculator.doCalc(view.getArray());
            System.out.println("Result is " + result);
        }catch (ArraySizeException e){
            System.err.println("Error " +e.getMessage());
